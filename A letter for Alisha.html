@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A letter for Alisha</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdeff1;--paper:#fffaf6;--ink:#4a2f36;--accent:#c2566b;--soft:#f3c9d2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1216;--paper:#2a1b21;--ink:#f3dfe3;--accent:#e58a9d;--soft:#4a2a34}}
+:root[data-theme="dark"]{--bg:#1d1216;--paper:#2a1b21;--ink:#f3dfe3;--accent:#e58a9d;--soft:#4a2a34}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;font-size:20px;line-height:1.7;min-height:100vh;overflow-x:hidden}
+.script{font-family:"Dancing Script","Brush Script MT",cursive;color:var(--accent)}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+#hearts span{position:absolute;bottom:-40px;color:var(--accent);opacity:.25;animation:rise linear infinite}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+#cover{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;text-align:center;padding:24px;cursor:pointer;transition:opacity .8s}
+#cover.gone{opacity:0;pointer-events:none;position:absolute;inset:0}
+.env{width:min(300px,78vw);filter:drop-shadow(0 12px 24px rgba(194,86,107,.25));animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+#cover h1{font-size:2.2rem;margin:0;font-weight:600}
+#cover p{margin:0;font-style:italic;opacity:.8}
+#letter{position:relative;z-index:1;display:none;max-width:640px;margin:0 auto;padding:32px 20px 64px}
+#letter.show{display:block}
+.paper{background:var(--paper);border-radius:6px;padding:36px 26px;box-shadow:0 10px 40px rgba(194,86,107,.18);border:1px solid var(--soft)}
+.paper h2{font-size:2.3rem;margin:0 0 20px;font-weight:600}
+.paper p{margin:0 0 1.2em;opacity:0;transform:translateY(14px);transition:opacity .9s,transform .9s}
+.paper p.in{opacity:1;transform:none}
+.orn{text-align:center;color:var(--accent);margin:8px 0 24px}
+.sign{font-size:1.9rem;text-align:right;margin-top:28px}
+@media (prefers-reduced-motion:reduce){#hearts span,.env{animation:none}.paper p{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="hearts" aria-hidden="true"></div>
+
+<div id="cover" role="button" tabindex="0" aria-label="Open the letter">
+<svg class="env" viewBox="0 0 300 200" aria-hidden="true">
+<rect x="4" y="20" width="292" height="176" rx="10" fill="#fff6f0" stroke="#e8aab8" stroke-width="2"/>
+<path d="M4 30 L150 128 L296 30" fill="none" stroke="#e8aab8" stroke-width="2"/>
+<path d="M4 196 L112 106 M296 196 L188 106" stroke="#f0c4cf" stroke-width="2"/>
+<path d="M150 118c-26-20-26-42-8-46 8-2 14 3 8 12 6-9 12-14 20-12 18 4 14 28-20 46z" transform="translate(0 -8) scale(1)" fill="#c2566b"/>
+</svg>
+<h1 class="script">For Alisha</h1>
+<p>Tap to open ❤️</p>
+</div>
+
+<main id="letter">
+<div class="paper">
+<h2 class="script">My dearest Alisha,</h2>
+
+<p>I wish I could find a way to let you see yourself through my eyes, even just for a little while. I don’t think you realise how beautiful you are to me, and I don’t mean just the way you look, although you could honestly leave me staring at you for hours without saying a single word. I mean the little things that make you <em>you</em>: the way your mind works, the way you feel things so deeply, the little moods you get into, the things you overthink, the way you sometimes hide what you’re feeling even when there’s so much going on inside that pretty little head of yours.</p>
+
+<p>I wish I could sit beside you on the days when your thoughts get too loud, gently hold your hand, and remind you that you don’t have to figure everything out all at once, that you don’t always have to be okay, and that you never have to make yourself easier to love just because you’re having a difficult day. You deserve a love that feels like coming home after the longest day, a love that never makes you question whether you’re enough, one that gives you room to breathe and still makes you feel wanted in every possible way.</p>
+
+<div class="orn">❦</div>
+
+<p>And if I ever get the chance to be that person for you, I want to love you in all the little ways that matter: remembering the things you tell me, listening to the stories you’ve told a hundred times, learning the language of your silences, making you laugh when you feel like crying, and sending you the most unnecessary updates about my day just because you’re the person I want to tell. I want the sleepy conversations, the random calls that turn into hours, the stupid jokes only we understand, and the little disagreements we learn to work through.</p>
+
+<p>And someday, if life is kind enough to give us that chance, I want the real things too: walking beside you with my hand in yours, looking at you across a table while you tell me something you’re excited about, bringing you flowers just because I saw them and thought of you, and getting to see that smile of yours without a screen between us.</p>
+
+<p>I can’t magically make every bad thought disappear, or promise that life will always be gentle with you. But I hope I can remind you that even when it isn’t, there are still beautiful things waiting for you, and maybe I can be one of them. You don’t have to earn my affection by being happy all the time, and you don’t have to pretend to be fine just to keep things easy. I want to know the girl who laughs until she can’t breathe just as much as I want to understand the girl who goes quiet when something hurts. Every version of you deserves tenderness.</p>
+
+<p>And Ali bear, if there’s one thing I wish I could leave in your heart today, it’s the reminder that you are so much more than the doubts you sometimes have about yourself. You are a whole little universe of thoughts, feelings, dreams, and beautiful little contradictions, and I would love to keep discovering all the things that make you who you are.</p>
+
+<div class="orn">❦</div>
+
+<p>Sometimes I catch myself thinking about how strange and lovely it is that out of all the people in this enormous world, our paths crossed, and now there’s this one particular girl whose messages can change the mood of my entire day, whose voice I’d happily listen to even when she’s talking about the most random thing imaginable, and whose happiness matters to me in ways I can’t always put into words. I don’t know what the future has written for us, and I don’t want to rush the beautiful things by naming every chapter before we’ve lived it. But I do know that right now, you make my world a little softer, a little brighter, and a lot more interesting.</p>
+
+<p>If I could, I’d steal every worry from your mind for a day, take you somewhere peaceful, buy you something sweet, hold you close, kiss your forehead, and remind you that you’re allowed to be loved without having to be perfect. Until I can do that in person, let these words say it for me: you’re my favourite notification, one of my favourite thoughts to get lost in, and a girl I feel incredibly lucky to know.</p>
+
+<p>I hope today gives you a hundred little reasons to smile. And if it doesn’t, I hope you remember that somewhere there’s a boy who wishes he could make you smile once more, who thinks you’re adorable even when you’re being a little dramatic, who wants to hear about the things that excite you and the things that hurt you, and who would choose another conversation with you over a thousand uninteresting things the world has to offer.</p>
+
+<p>So please be gentle with yourself today, okay, my Ali bear? Eat properly, drink some water, take a little break when your mind needs one, and don’t forget that you deserve the same kindness you give to the people you love.</p>
+
+<p>I wish I could put all the affection I have for you into a little box, tie it with a ribbon, and leave it in your hands so you could open it whenever you feel low and remember how precious you are to me. And if words could become little kisses, I think I’d have sent you enough by now to cover your entire face, make you laugh at how ridiculous I’m being, and leave you with absolutely no doubt about how much I adore you.</p>
+
+<p>You’re my sweet girl, my Ali bear, and I hope you never forget that there is something incredibly lovely about simply being you.</p>
+
+<p class="sign script">Yours always ❤️</p>
+</div>
+</main>
+
+<script>
+(function(){
+var h=document.getElementById('hearts');
+for(var i=0;i<14;i++){var s=document.createElement('span');s.textContent=i%3?'♥':'❀';s.style.left=Math.random()*100+'%';s.style.fontSize=(14+Math.random()*18)+'px';s.style.animationDuration=(9+Math.random()*10)+'s';s.style.animationDelay=(-Math.random()*14)+'s';h.appendChild(s);}
+var cover=document.getElementById('cover'),letter=document.getElementById('letter');
+function open(){cover.classList.add('gone');setTimeout(function(){cover.style.display='none';letter.classList.add('show');window.scrollTo(0,0);reveal();},700);}
+cover.addEventListener('click',open);
+cover.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+function reveal(){var ps=document.querySelectorAll('.paper p');
+if(!('IntersectionObserver' in window)){ps.forEach(function(p){p.classList.add('in');});return;}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.15});
+ps.forEach(function(p){io.observe(p);});}
+})();
+</script>
+</body>
+</html>
